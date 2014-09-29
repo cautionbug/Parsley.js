@@ -1,6 +1,6 @@
 {
   "name": "parsleyjs",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "ignore": [
     "**/.*",
     "build",
@@ -11,12 +11,11 @@
     "*.html",
     "AUTHORS.txt",
     "Gruntfile.js",
-    "package.json",
-    "bower.json"
+    "package.json"
   ],
   "devDependencies": {
     "jquery": "~1.10.0",
-    "validator.js": "~0.5.8",
+    "validator.js": "~1.0.0",
     "requirejs": "~2.1.0",
     "bootstrap": "~3.0.3",
     "sinonjs": "~1.7.3",
@@ -35,5 +34,5 @@
     "url": "http://guillaumepotier.com/"
   },
   "license": "MIT",
-  "main": "./dist/parsley.js"
+  "main": "dist/parsley.js"
 }

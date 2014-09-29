@@ -1,10 +1,10 @@
 {
   "name": "parsleyjs",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "homepage": "http://parsleyjs.org",
   "license": "MIT",
   "description": "Validate your forms, frontend, without writing a single line of javascript!",
-  "main": "./dist/parsley.js",
+  "main": "dist/parsley.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/guillaumepotier/Parsley.js.git"
@@ -37,6 +37,7 @@
     "grunt-npm2bower-sync": "~0.3.0"
   },
   "scripts": {
-    "test": "mocha-phantomjs test/index.html"
+    "test": "mocha-phantomjs test/index.html",
+    "test-all": "mocha-phantomjs test/index.html && mocha-phantomjs test/env/amd.html && mocha-phantomjs test/env/browserify.html"
   }
 }
