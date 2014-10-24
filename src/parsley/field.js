@@ -64,7 +64,7 @@ define('parsley/field', [
       value = value || this.getValue();
 
       // If a field is empty and not required, leave it alone, it's just fine
-      // Except if `data-parsley-validate-if-empty` explicitely added, useful for some custom validators
+      // Except if `data-parsley-validate-if-empty` explicitly added, useful for some custom validators
       if (0 === value.length && !this._isRequired() && 'undefined' === typeof this.options.validateIfEmpty && true !== force)
         return this.validationResult = [];
 
@@ -80,11 +80,11 @@ define('parsley/field', [
       return true;
     },
 
-    // @returns Parsley field computed value that could be overrided or configured in DOM
+    // @returns Parsley field computed value that could be overridden or configured in DOM
     getValue: function () {
       var value;
 
-      // Value could be overriden in DOM
+      // Value could be overridden in DOM
       if ('undefined' !== typeof this.options.value)
         value = this.options.value;
       else
